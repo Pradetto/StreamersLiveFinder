@@ -1,9 +1,10 @@
+import { Box } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 function NotFound() {
   return (
     <>
-      <h1>Not Found</h1>
+      <Box>Not Found</Box>
       <Link to="/">GO HOME</Link>
     </>
   );

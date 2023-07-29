@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "StreamFinder",
+  "version": "0.0.1",
+  "description": "Find your favorite Streamer online on Twitch and Youtube",
+  "action": {
+    "default_title": "View all available tests",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
