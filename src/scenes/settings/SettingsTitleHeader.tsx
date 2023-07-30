@@ -16,7 +16,7 @@ function SettingsTitleHeader({ streamService, isAuth }: Props) {
       const twitchOAuthURL = `https://id.twitch.tv/oauth2/authorize?client_id=${clientID}&redirect_uri=${redirectURI}&response_type=token&scope=${scopes}`;
 
       // window.location.href = twitchOAuthURL;
-      chrome.tabs.create({ url: twitchOAuthURL });
+      chrome.tabs.create({ url: twitchOAuthURL, active:false });
     } else if (streamService === 'Youtube') {
       console.log('Initialize Youtube OAuth')
     }

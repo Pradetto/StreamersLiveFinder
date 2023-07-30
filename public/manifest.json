@@ -3,11 +3,18 @@
   "name": "StreamFinder",
   "version": "0.0.1",
   "description": "Find your favorite Streamer online on Twitch and Youtube",
+  "background": {
+    "service_worker": "background/background.js",
+    "persistent": true
+  },
+  "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["contentScript.js"]
+  }
+],
   "action": {
     "default_title": "View all available tests",
     "default_popup": "index.html"
-  },
-  "background": {
-    "service_worker": "background.js"
   }
 }
