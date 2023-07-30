@@ -1,3 +1,5 @@
+console.log("Content Script Twitch Loaded");
+
 window.onload = (): void => {
   // Parse access_token from the URL
   const hashFragment = window.location.hash.substring(1);
@@ -6,6 +8,7 @@ window.onload = (): void => {
 
   // Send access_token to background script
   if (accessToken) {
+    console.log("Sending access token to background script: ", accessToken);
     chrome.runtime.sendMessage({ token: accessToken });
   }
 }
