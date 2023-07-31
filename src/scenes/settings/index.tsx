@@ -6,8 +6,8 @@ function Settings() {
   return (
     <VStack h="400px" display="flex" justifyContent="space-between" p={4}>
       <VStack>
-        <SettingsTitleHeader streamService="Twitch" isAuth={false} />
-        <SettingsTitleHeader streamService="Youtube" isAuth={false} />
+        <SettingsTitleHeader streamService="Twitch" />
+        <SettingsTitleHeader streamService="Youtube" />
       </VStack>
       <Link as={RouterLink} to="/streamers">
         <Button mb={8}>View Streamers</Button>

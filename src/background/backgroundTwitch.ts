@@ -24,7 +24,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         console.error('Failed to save access token: ', error);
       });
       
-      chrome.tabs.remove(tabId); // Close the tab outside the promise chain
+      chrome.tabs.remove(tabId)
     }
   }
 });
